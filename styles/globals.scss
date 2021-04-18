@@ -1,0 +1,150 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding:0px;
+  margin:0px;
+}
+
+.briefMain{
+  width:100%;
+  min-height:800px;
+  background:#131617;
+  color:#fff;
+
+  .briefPrev{
+    width:80px;
+    height:100%;
+    z-index:1;
+    opacity: 0.6;
+    background: #131617;
+    position:fixed;
+    margin:0;
+    overflow:hidden;
+  }
+
+  .briefPrev:hover{
+    background: #0f0f0f;
+  }
+
+  .briefNext{
+    width:80px;
+    height:100%;
+    z-index:1;
+    opacity: 0.6;
+    background: #131617;
+    position:fixed;
+    margin:0;
+    overflow:hidden;
+    right:0;
+
+    a{
+      text-align:center;
+      margin-top:50%;
+    }
+  }
+
+  .briefNext:hover{
+    background: #0f0f0f;
+  }
+
+  .briefContainer{
+    width:80%;
+    margin:0px auto;
+    padding-top:40px;
+
+    .briefFlex{
+      width:100%;
+      height:auto;
+      display:flex;
+
+      .briefImageCont{
+        width:55%;
+        height:400px;
+        border-radius:15px;
+        overflow:hidden;
+        background-color:#04151a;
+        margin:0px;
+
+        img{
+          width:100%;
+          height:100%;
+        }
+
+        .briefOpacity{
+          width:100%;
+          height: 200%;
+          margin-top: -100%;
+          position: relative;
+          z-index:1;
+          opacity: 0.4;
+          background: #070808;
+        }
+      }
+
+      .briefContent{
+        width:60%;
+        height:520px;
+        border-radius:15px;
+        overflow:hidden;
+        background-color:#070808;
+        margin:130px 0px 0px -50px;
+        z-index:5;
+
+        .briefContDisp{
+          padding:20px 30px;
+          color:#fff;
+          height:90%;
+
+          h1{
+            padding-bottom:15px;
+            color:#edfaf8;
+          }
+
+          p{
+            text-indent:25px;
+            letter-spacing : 1px;
+            line-height:26px;
+            color:#e1e4f0;
+          }
+        }
+        .briefContSrc{
+          width:100%;
+          height:10%;
+          background-color:#0f0f0f;
+          display:flex;
+
+          .briefContSrcImg{
+            width:50%;
+            padding:0px;
+
+            img{
+              width:90px;
+              height:35%;
+              margin:15px 25px;
+            }
+          }
+          .briefContSrcMore{
+            width:50%;
+            padding:0px;
+          }
+        }
+      }
+    }
+  }
+}
