@@ -18,12 +18,12 @@ const Brief = () => {
         <div className="briefMain">
         <div className="briefPrev">
             <Link href={ "/Brief/" + prev } >
-                <a><ImPrevious2 size="30px" color="#fff" style={{ margin:"500px 25px" }} /></a>
+                <a><ImPrevious2 size="30px" color="#fff" style={{ margin:"400px 25px" }} /></a>
             </Link>
         </div>
         <div className="briefNext">
             <Link href={ "/Brief/" + next } >
-                <a><ImNext2 size="30px" color="#fff" style={{ margin:"500px 25px",float:"right" }} /></a>
+                <a><ImNext2 size="30px" color="#fff" style={{ margin:"400px 25px",float:"right" }} /></a>
             </Link>
         </div>
             <div className="briefContainer">
